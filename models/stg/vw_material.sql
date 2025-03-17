@@ -243,8 +243,8 @@ MARA.MANDT as Client_Id
 ,MARA._FIVETRAN_DELETED as _Fivetran_Deleted
 ,MARA._FIVETRAN_SYNCED as _Fivetran_Synced
 , MAKT.MAKTX as Material_Description
-from {{source('dhsaphana_sapabap1', 'mara')}}
-Left Join {{source('dhsaphana_sapabap1', 'makt')}}  on 
+from {{source('dhsaphana1_sapabap1', 'mara')}}
+Left Join {{source('dhsaphana1_sapabap1', 'makt')}}  on 
     MARA.MANDT = MAKT.MANDT
     AND MARA.MATNR = MAKT.MATNR
 and MAKT.SPRAS= 'E'

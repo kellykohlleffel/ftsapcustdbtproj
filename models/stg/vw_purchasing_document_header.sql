@@ -138,6 +138,6 @@ EKKO.MANDT as Client_Id
 ,EKKO.CON_DISTR_LEV as Distrib_Using_Target_Value_Or_Item
 ,EKKO._FIVETRAN_DELETED as _Fivetran_Deleted
 ,EKKO._FIVETRAN_SYNCED as _Fivetran_Synced
-from {{source('dhsaphana_sapabap1', 'ekko')}}
+from {{source('dhsaphana1_sapabap1', 'ekko')}}
 where
 EKKO.MANDT in ('800')

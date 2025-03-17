@@ -38,8 +38,8 @@ T134.MANDT as Client_Id
 ,T134._FIVETRAN_DELETED as _Fivetran_Deleted
 ,T134._FIVETRAN_SYNCED as _Fivetran_Synced
 , T134T.MTBEZ as Description_Material_Type
-from {{source('dhsaphana_sapabap1', 't134')}}
-Left Join {{source('dhsaphana_sapabap1', 't134t')}} on 
+from {{source('dhsaphana1_sapabap1', 't134')}}
+Left Join {{source('dhsaphana1_sapabap1', 't134t')}} on 
     T134.MANDT = T134T.MANDT
     AND T134.MTART = T134T.MTART
 and T134T.SPRAS= 'E'

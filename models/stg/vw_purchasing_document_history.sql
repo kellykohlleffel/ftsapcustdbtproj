@@ -86,6 +86,6 @@ EKBE.MANDT as Client_Id
 ,EKBE.WRF_CHARSTC3 as Characteristic_Value_3
 ,EKBE._FIVETRAN_DELETED as _Fivetran_Deleted
 ,EKBE._FIVETRAN_SYNCED as _Fivetran_Synced
-from {{source('dhsaphana_sapabap1', 'ekbe')}}
+from {{source('dhsaphana1_sapabap1', 'ekbe')}}
 where
 EKBE.MANDT in ('800')

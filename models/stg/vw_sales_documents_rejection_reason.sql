@@ -9,8 +9,8 @@ TVAG.MANDT as Client_Id
 ,TVAG._FIVETRAN_DELETED as _Fivetran_Deleted
 ,TVAG._FIVETRAN_SYNCED as _Fivetran_Synced
 , TVAGT.BEZEI as Description
-from {{source('dhsaphana_sapabap1', 'tvag')}}
-Left Join {{source('dhsaphana_sapabap1', 'tvagt')}} on 
+from {{source('dhsaphana1_sapabap1', 'tvag')}}
+Left Join {{source('dhsaphana1_sapabap1', 'tvagt')}} on 
     TVAG.MANDT = TVAGT.MANDT
     AND TVAG.ABGRU = TVAGT.ABGRU
 and TVAGT.SPRAS= 'E'

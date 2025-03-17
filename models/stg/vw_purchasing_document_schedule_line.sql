@@ -74,6 +74,6 @@ EKET.MANDT as Client_Id
 ,EKET.DATESHIFT_NUMBER as Number_Current_Date_Shifts
 ,EKET._FIVETRAN_DELETED as _Fivetran_Deleted
 ,EKET._FIVETRAN_SYNCED as _Fivetran_Synced
-from {{source('dhsaphana_sapabap1', 'eket')}}
+from {{source('dhsaphana1_sapabap1', 'eket')}}
 where
 EKET.MANDT in ('800')

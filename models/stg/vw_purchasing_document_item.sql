@@ -383,6 +383,6 @@ EKPO.MANDT AS CLIENT_ID
 ,EKPO.CONS_ORDER AS PURCHASE_ORDER_CONSIGNMENT
 ,EKPO._FIVETRAN_DELETED AS _FIVETRAN_DELETED
 ,EKPO._FIVETRAN_SYNCED AS _FIVETRAN_SYNCED
-from {{source('dhsaphana_sapabap1', 'ekpo')}}
+from {{source('dhsaphana1_sapabap1', 'ekpo')}}
 where
 EKPO.MANDT in ('800')

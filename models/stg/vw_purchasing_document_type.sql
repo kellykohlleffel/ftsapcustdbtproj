@@ -57,8 +57,8 @@ T161.MANDT as Client_Id
 ,T161._FIVETRAN_DELETED as _Fivetran_Deleted
 ,T161._FIVETRAN_SYNCED as _Fivetran_Synced
 , T161T.BATXT as Doc_Type_Descript
-from {{source('dhsaphana_sapabap1', 't161')}}
-Left Join {{source('dhsaphana_sapabap1', 't161t')}} on 
+from {{source('dhsaphana1_sapabap1', 't161')}}
+Left Join {{source('dhsaphana1_sapabap1', 't161t')}} on 
     T161.MANDT = T161T.MANDT
     AND T161.BSART = T161T.BSART
     AND T161.BSTYP = T161T.BSTYP

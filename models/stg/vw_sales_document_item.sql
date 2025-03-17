@@ -387,6 +387,6 @@ VBAP.MANDT AS CLIENT_ID
 ,VBAP.CEPOK AS STATUS_EXPECTED_PRICE
 ,VBAP._FIVETRAN_DELETED AS _FIVETRAN_DELETED
 ,VBAP._FIVETRAN_SYNCED AS _FIVETRAN_SYNCED
-from {{source('dhsaphana_sapabap1', 'vbap')}}
+from {{source('dhsaphana1_sapabap1', 'vbap')}}
 where
 VBAP.MANDT in ('800')

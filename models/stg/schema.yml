@@ -1,11 +1,11 @@
 version: 2
 
 sources:
-  - name: dhsaphana_stg
-    schema: dhsaphana_stg
+  - name: dhsaphana1_stg
+    schema: dhsaphana1_stg
   
-  - name: dhsaphana_sapabap1
-    schema: dhsaphana_sapabap1
+  - name: dhsaphana1_sapabap1
+    schema: dhsaphana1_sapabap1
     tables:
       - name: dd07l
       - name: dd07t

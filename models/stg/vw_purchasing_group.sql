@@ -10,6 +10,6 @@ T024.EKGRP as Purchasing_Group_Id
 ,T024.EKNAM as Description_Purchasing_Group
 ,T024._FIVETRAN_DELETED as _Fivetran_Deleted
 ,T024._FIVETRAN_SYNCED as _Fivetran_Synced
-from {{source('dhsaphana_sapabap1', 't024')}}
+from {{source('dhsaphana1_sapabap1', 't024')}}
 where
 T024.MANDT in ('800')

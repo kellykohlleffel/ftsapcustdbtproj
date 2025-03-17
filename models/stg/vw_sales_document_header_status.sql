@@ -85,6 +85,6 @@ VBUK.MANDT as Client_Id
 ,VBUK.FSH_AR_STAT_HDR as Arun_Status_At_Header
 ,VBUK._FIVETRAN_DELETED as _Fivetran_Deleted
 ,VBUK._FIVETRAN_SYNCED as _Fivetran_Synced
-from {{source('dhsaphana_sapabap1', 'vbuk')}}
+from {{source('dhsaphana1_sapabap1', 'vbuk')}}
 where
 VBUK.MANDT in ('800')

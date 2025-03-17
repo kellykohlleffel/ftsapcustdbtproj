@@ -80,6 +80,6 @@ T001.BUKRS as Company_Code_Id
 ,T001.STCEG as Vat_Registration_No
 ,T001._FIVETRAN_DELETED as _Fivetran_Deleted
 ,T001._FIVETRAN_SYNCED as _Fivetran_Synced
-from {{source('dhsaphana_sapabap1', 't001')}}
+from {{source('dhsaphana1_sapabap1', 't001')}}
 where
 T001.MANDT in ('800')
