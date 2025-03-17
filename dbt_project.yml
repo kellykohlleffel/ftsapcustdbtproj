@@ -34,7 +34,7 @@ models:
     # Config indicated by + and applies to all files under models/example/
     stg:
       +materialized: view
-      +schema: accelerate_saphana_stg
+      +schema: dhsaphana1_sapabap1_stg
     bi:
       +materialized: view
-      +schema: accelerate_saphana_bi
+      +schema: dhsaphana1_sapabap1_bi
