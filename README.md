@@ -1,13 +1,23 @@
 # SAP BI
 
 ## Project use
-This project contains a set of cascading views that breaks out SAP tables into a standard English format.  It is based on the SAP ERP on HANA connector at the time of 01/15/2025.  It is used in Fivetran as a dbt Core project.
+This project contains a set of cascading views that breaks out SAP tables into a standard English format.  It is based on the SAP ERP on HANA connector (using SNC) at the time of 03/17/2025.  It is used in Fivetran as a dbt Core project.
 
-## Tables used
-AFIH, AFKO, AUFK, DD07L, DD07T, EKBE, EKES, EKET, EKKO, EKPO, KNA1, LFA1, LIKP, LIPS, MAKT, MARA, PMCO, QMEL, QMFE, QMIH, QMSM, QPCD, QPCT, QPGR, QPGT, T001, T001W, T005, T005T, T024, T024E, T025, T025T, T134, T134T, T161, T161T, T165M, T165R, T179, T179T, TCURC, TCURT, TCURV, TKA01, TSPA, TSPAT, TVAG, TVAGT, TVAU, TVAUT, TVKO, TVKOT, VBAK, VBAP, VBKD, VBPA, VBRK, VBRP, VBUK, VBUP
+## 73 Total tables used
+```
+AFIH, AFKO, AUFK, BKPF, BSEG, DD07L, DD07T, EKBE, EKES, EKET, EKKO, EKPO, FAGLFLEXA, FAGLFLEXT, KNA1, LFA1, LIKP, LIPS, MAKT, MARA, PA0000, PA0001, PA0007, PA0008, PA0031, PMCO, QMEL, QMFE, QMIH, QMSM, QPCD, QPCT, QPGR, QPGT, SKA1, T001, T001W, T005, T005T, T024, T024E, T025, T025T, T134, T134T, T161, T161T, T165M, T165R, T179, T179T, T503, T880, TCURC, TCURT, TCURV, TKA01, TSPA, TSPAT, TVAG, TVAGT, TVAU, TVAUT, TVKO, TVKOT, VBAK, VBAP, VBKD, VBPA, VBRK, VBRP, VBUK, VBUP
+```
 
 ### Commands to build:
 - dbt run
+
+```
+run dbt dimfact model
+```
+
+```
+dbt run --select +d_customer +d_vendor +f_sales_order +d_plant +d_rejection_reason +d_purchasing_organization +f_purchasing_order +d_material +d_purchasing_order
+```
 
 ## Sample queries:
 ### Top 10 Sales by Material Type
