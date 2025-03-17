@@ -12,4 +12,4 @@ T024.EKGRP as Purchasing_Group_Id
 ,T024._FIVETRAN_SYNCED as _Fivetran_Synced
 from {{source('dhsaphana1_sapabap1', 't024')}}
 where
-T024.MANDT in ('800')
+T024.MANDT in '800'

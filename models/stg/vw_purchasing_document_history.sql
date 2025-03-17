@@ -88,4 +88,4 @@ EKBE.MANDT as Client_Id
 ,EKBE._FIVETRAN_SYNCED as _Fivetran_Synced
 from {{source('dhsaphana1_sapabap1', 'ekbe')}}
 where
-EKBE.MANDT in ('800')
+EKBE.MANDT in '800'

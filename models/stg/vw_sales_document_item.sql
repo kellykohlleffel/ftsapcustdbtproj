@@ -389,4 +389,4 @@ VBAP.MANDT AS CLIENT_ID
 ,VBAP._FIVETRAN_SYNCED AS _FIVETRAN_SYNCED
 from {{source('dhsaphana1_sapabap1', 'vbap')}}
 where
-VBAP.MANDT in ('800')
+VBAP.MANDT in '800'

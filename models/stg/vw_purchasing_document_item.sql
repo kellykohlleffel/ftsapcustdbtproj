@@ -385,4 +385,4 @@ EKPO.MANDT AS CLIENT_ID
 ,EKPO._FIVETRAN_SYNCED AS _FIVETRAN_SYNCED
 from {{source('dhsaphana1_sapabap1', 'ekpo')}}
 where
-EKPO.MANDT in ('800')
+EKPO.MANDT in '800'

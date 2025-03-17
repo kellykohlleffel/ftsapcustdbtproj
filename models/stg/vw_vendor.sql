@@ -142,4 +142,4 @@ LFA1.MANDT as Client_Id
 ,LFA1._FIVETRAN_SYNCED as _Fivetran_Synced
 from {{source('dhsaphana1_sapabap1', 'lfa1')}}
 where
-LFA1.MANDT in ('800')
+LFA1.MANDT in '800'

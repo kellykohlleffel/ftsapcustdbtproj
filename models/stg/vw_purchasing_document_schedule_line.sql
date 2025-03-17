@@ -76,4 +76,4 @@ EKET.MANDT as Client_Id
 ,EKET._FIVETRAN_SYNCED as _Fivetran_Synced
 from {{source('dhsaphana1_sapabap1', 'eket')}}
 where
-EKET.MANDT in ('800')
+EKET.MANDT in '800'

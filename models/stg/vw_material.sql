@@ -249,4 +249,4 @@ Left Join {{source('dhsaphana1_sapabap1', 'makt')}}  on
     AND MARA.MATNR = MAKT.MATNR
 and MAKT.SPRAS= 'E'
 where
-MARA.MANDT in ('800')
+MARA.MANDT in '800'

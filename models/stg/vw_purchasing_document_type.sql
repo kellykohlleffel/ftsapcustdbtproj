@@ -64,4 +64,4 @@ Left Join {{source('dhsaphana1_sapabap1', 't161t')}} on
     AND T161.BSTYP = T161T.BSTYP
 and T161T.SPRAS= 'E'
 where
-T161.MANDT in ('800')
+T161.MANDT in '800'

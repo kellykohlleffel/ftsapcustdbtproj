@@ -68,4 +68,4 @@ T001W.MANDT AS CLIENT_ID
 ,T001W._FIVETRAN_SYNCED AS _FIVETRAN_SYNCED
 from {{source('dhsaphana1_sapabap1', 't001w')}}
 where
-T001W.MANDT in ('800')
+T001W.MANDT in '800'

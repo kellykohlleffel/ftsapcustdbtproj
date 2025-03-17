@@ -15,4 +15,4 @@ Left Join {{source('dhsaphana1_sapabap1', 'tvagt')}} on
     AND TVAG.ABGRU = TVAGT.ABGRU
 and TVAGT.SPRAS= 'E'
 where
-TVAG.MANDT in ('800')
+TVAG.MANDT in '800'

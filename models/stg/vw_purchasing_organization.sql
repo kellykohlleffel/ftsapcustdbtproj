@@ -15,4 +15,4 @@ T024E.EKORG as Purchasing_Organization_Id
 ,T024E._FIVETRAN_SYNCED as _Fivetran_Synced
 from {{source('dhsaphana1_sapabap1', 't024e')}}
 where
-T024E.MANDT in ('800')
+T024E.MANDT in '800'

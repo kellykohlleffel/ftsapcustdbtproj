@@ -44,4 +44,4 @@ Left Join {{source('dhsaphana1_sapabap1', 't134t')}} on
     AND T134.MTART = T134T.MTART
 and T134T.SPRAS= 'E'
 where
-T134.MANDT in ('800')
+T134.MANDT in '800'

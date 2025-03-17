@@ -161,4 +161,4 @@ VBAK.MANDT as Client_Id
 ,VBAK._FIVETRAN_SYNCED as _Fivetran_Synced
 from {{source('dhsaphana1_sapabap1', 'vbak')}}
 where
-VBAK.MANDT in ('800')
+VBAK.MANDT in '800'
